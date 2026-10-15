@@ -1,0 +1,434 @@
+{
+  "fixture_count": 9,
+  "method_count": 2,
+  "rows": [
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o644",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "before_644",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "reader opens pathname before consumer",
+        "consumer reads; keeps file"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o644",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "before_644",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "reader opens pathname before consumer",
+        "consumer reads; removes pathname"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o600",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "before_600",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "reader opens pathname before consumer",
+        "consumer reads; keeps file"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o600",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "before_600",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "reader opens pathname before consumer",
+        "consumer reads; removes pathname"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o644",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "after_644",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; keeps file",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o644",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "missing",
+        "value": null
+      },
+      "scenario": "after_644",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; removes pathname",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o600",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "after_600",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; keeps file",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o600",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "missing",
+        "value": null
+      },
+      "scenario": "after_600",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; removes pathname",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o644",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "held_descriptor_644",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "open descriptor before consumer",
+        "consumer reads; keeps file",
+        "reader reads held descriptor"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o644",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "held_descriptor_644",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "open descriptor before consumer",
+        "consumer reads; removes pathname",
+        "reader reads held descriptor"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o600",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "held_descriptor_600",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "open descriptor before consumer",
+        "consumer reads; keeps file",
+        "reader reads held descriptor"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o600",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "held_descriptor_600",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "open descriptor before consumer",
+        "consumer reads; removes pathname",
+        "reader reads held descriptor"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 1,
+        "value": ""
+      },
+      "method": "persistent",
+      "mode_at_start": null,
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "missing",
+        "value": null
+      },
+      "scenario": "missing",
+      "second_consumer": null,
+      "trace": [
+        "leave marker absent",
+        "replace child environment; same OS user",
+        "consumer reads; keeps file",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": ""
+      },
+      "method": "read_then_delete",
+      "mode_at_start": null,
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "missing",
+        "value": null
+      },
+      "scenario": "missing",
+      "second_consumer": null,
+      "trace": [
+        "leave marker absent",
+        "replace child environment; same OS user",
+        "consumer reads; removes pathname",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o600",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "ordinary work note"
+      },
+      "scenario": "ordinary_file",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; keeps file",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o600",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "ordinary work note"
+      },
+      "scenario": "ordinary_file",
+      "second_consumer": null,
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; removes pathname",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "persistent",
+      "mode_at_start": "0o600",
+      "path_exists_after": true,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "read",
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "scenario": "second_consumer",
+      "second_consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; keeps file",
+        "second consumer tries same pathname",
+        "reader tries pathname after consumer"
+      ]
+    },
+    {
+      "consumer": {
+        "exit_status": 0,
+        "value": "INVENTED_NONCREDENTIAL_MARKER_42"
+      },
+      "method": "read_then_delete",
+      "mode_at_start": "0o600",
+      "path_exists_after": false,
+      "reader": {
+        "environment_has_marker": false,
+        "same_user": true,
+        "status": "missing",
+        "value": null
+      },
+      "scenario": "second_consumer",
+      "second_consumer": {
+        "exit_status": 0,
+        "value": ""
+      },
+      "trace": [
+        "create invented fixture",
+        "replace child environment; same OS user",
+        "consumer reads; removes pathname",
+        "second consumer tries same pathname",
+        "reader tries pathname after consumer"
+      ]
+    }
+  ],
+  "schema": 1,
+  "scope": "Synthetic markers; actual POSIX reads; no model, provider or network"
+}

@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "tests": 10
+  },
+  "fault_injections": {
+    "deny_all": {
+      "errors": 0,
+      "failures": 4,
+      "passed": false,
+      "tests": 10
+    },
+    "keep_file": {
+      "errors": 0,
+      "failures": 4,
+      "passed": false,
+      "tests": 10
+    }
+  }
+}
